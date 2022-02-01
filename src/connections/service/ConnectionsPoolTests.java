@@ -44,5 +44,7 @@ class ConnectionsPoolTests {
 		connectionsPool.addConnection(co4);
 		assertEquals(null, connectionsPool.getConnection(co1.getId()));
 	}
-
+	/* V.R. I don't see how to test that added connection and connection after
+	 * + calling getConnection()+ are placed to the head.
+	 */
 }
